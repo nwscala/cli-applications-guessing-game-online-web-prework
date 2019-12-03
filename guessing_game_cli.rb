@@ -1,5 +1,5 @@
 # Code your solution here!
-require 'pry'
+
 def run_guessing_game
   computer_guess = rand(6) + 1
   player_guess = gets.chomp
@@ -11,5 +11,4 @@ def run_guessing_game
   elsif player_guess != computer_guess
     puts "Sorry! The computer guessed #{computer_guess}."
   end
-  binding.pry
 end 
