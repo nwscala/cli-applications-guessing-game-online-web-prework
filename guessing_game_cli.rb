@@ -1,7 +1,7 @@
 # Code your solution here!
 def run_guessing_game
-  
-  computer_guess = rand(6) + 1
+  puts "Please guess a number between 1 and 6"
+  computer_guess = rand(1..6)
   player_guess = gets.chomp
   if player_guess != "exit"
     if player_guess == computer_guess
