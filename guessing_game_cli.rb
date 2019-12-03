@@ -4,9 +4,9 @@ def run_guessing_game
   player_guess = gets.chomp
   if player_guess == computer_guess
     return "You guessed the correct number!"
-  elsif player_guess == "exit"
-    return "Goodbye!"  
   elsif player_guess != computer_guess
     return "Sorry! The computer guessed #{computer_guess}."
+  elsif player_guess == "exit"
+    return "Goodbye!"  
   end 
 end 
